@@ -1,10 +1,5 @@
 var cart = [];
 
-var Item = function(itemName, itemPrice) {
-  this.itemName = itemName;
-  this.itemPrice = itemPrice;
-};
-
 function getCart() {
  return cart;
 }
