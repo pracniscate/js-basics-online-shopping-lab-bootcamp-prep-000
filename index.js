@@ -28,11 +28,10 @@ function viewCart() {
     return sentence + `${cart[x-1].itemName} at $${cart[x-1].itemPrice}.`;
   } else {
       for (; x < cart.length; x++) {
-        sentence = sentence + `${cart[x-1].itemName} at $${cartx-1].itemPrice}, `;
+        sentence = sentence + `${cart[x-1].itemName} at $${cart[x-1].itemPrice}, `;
       }
-      return sentence +`and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`
-  }
-  }
+      return sentence +`and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`;
+    }
 }
 
 function total() {
