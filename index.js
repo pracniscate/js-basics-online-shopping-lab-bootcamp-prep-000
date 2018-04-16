@@ -30,7 +30,7 @@ function viewCart() {
       for (; x < cart.length; x++) {
         sentence = sentence + `${cart[x-1].itemName} at $${cartx-1].itemPrice}, `;
       }
-      return sentence +`and ${cart[cart.length -1].itemName} at $${cart[cart.length
+      return sentence +`and ${cart[cart.length -1].itemName} at $${cart[cart.length -1
   }
   }
 }
