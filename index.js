@@ -26,6 +26,11 @@ function viewCart() {
     return "Your shopping cart is empty.";
   } else if (cart.length === 1) {
     return sentence + `${cart[x-1].itemName} at $${cart[x-1].itemPrice}.`;
+  } else {
+      for (; x < cart.length; x++) {
+        sentence = sentence + `${cart[x-1].itemName} at $${cartx-1].itemPrice}, `;
+      }
+      return sentence +`and ${cart[cart.length -1].itemName} at $${cart[cart.length
   }
   }
 }
