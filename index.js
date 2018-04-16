@@ -46,10 +46,24 @@ function removeFromCart(item) {
   if (cart.length === 0) {
     return "That item is not in your cart.";
   } else {
-    for (let i = 0; i < cart.length; i++)
+    for (let i = 0; i < cart.length; i++) {
+      if (cart[i].itemName === item) {
+        cart.splice(i, 1);
+        return cart;
+      } else {
+        if (i === cart.length -1) {
+          return "That item is not in your cart.";
+        } else {
+            continue;
+        }
+      }
+    }
   }
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  var cost = total();
+  if (cardNumber === undefined) {
+    return ""
+  }
 }
